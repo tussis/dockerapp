@@ -13,5 +13,11 @@ app.get('/', function(req, res) {
   });
 });
 
+// Add another page
+app.get('/info', function(req, res) {
+    res.render('info', {
+  });
+});
+
 app.listen(8080);
 module.exports.getApp = app;

@@ -11,3 +11,11 @@ describe('GET /', function(){
 	 .expect(200, done); 
   });
 });
+
+describe('GET /info', function(){
+  it('expects HTTP response 200', function(done){
+    request(app)
+     .get('/')
+	 .expect(200, done); 
+  });
+});
