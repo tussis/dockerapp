@@ -12,10 +12,10 @@ describe('GET /', function(){
   });
 });
 
-describe('GET /info', function(){
+describe('GET info page', function(){
   it('expects HTTP response 200', function(done){
     request(app)
-     .get('/')
+     .get('/info')
 	 .expect(200, done); 
   });
 });
