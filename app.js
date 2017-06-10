@@ -3,7 +3,8 @@
 'use strict';
 
 var express = require('express'),
-    app = express();
+    app = express(); 
+    router = express.Router(); 
 
 app.set('views', 'views');
 app.set('view engine', 'jade');
@@ -14,7 +15,7 @@ app.get('/', function(req, res) {
 });
 
 // Add another page
-app.get('/info', function(req, res) {
+router.get('/info', function(req, res) {
     res.render('info', {
   });
 });
