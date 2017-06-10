@@ -2,9 +2,11 @@
 // For demonstration purposes only
 'use strict';
 
-var express = require('express'),
-    app = express(), 
-    router = express.Router(); 
+
+var express = require('express');
+var routes = require('./routes/');
+
+var app = express();
 
 app.set('views', 'views');
 app.set('view engine', 'jade');
