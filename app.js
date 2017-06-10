@@ -3,7 +3,7 @@
 'use strict';
 
 var express = require('express'),
-    app = express(); 
+    app = express(), 
     router = express.Router(); 
 
 app.set('views', 'views');
