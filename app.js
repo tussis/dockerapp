@@ -9,16 +9,10 @@ var express = require('express'),
 app.set('views', 'views');
 app.set('view engine', 'jade');
 
-app.get('/', function(req, res) {
-    res.render('home', {
-  });
-});
-
-// Add another page
-router.get('/info', function(req, res) {
-    res.render('info', {
-  });
-});
+//app.get('/', function(req, res) {
+//    res.render('home', {
+//  });
+//});
 
 app.listen(8080);
 module.exports.getApp = app;
