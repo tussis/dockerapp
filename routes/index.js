@@ -10,10 +10,11 @@ router.get('/', function(req, res) {
   });
 });
 
-// Add another page
 router.get('/info', function(req, res) {
     res.render('info', {
   });
 });
 
+// Apply routes to app
+express().use("/", router)
 module.exports = router;

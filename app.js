@@ -10,6 +10,7 @@ var routes = require('./routes/');
 var app = express();
 
 app.set('views', 'views');
+app.set('img', 'img');
 app.set('view engine', 'jade');
 
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
